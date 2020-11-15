@@ -2,3 +2,9 @@
 .wget-hsts
 poky_*/
 
+.bash_history
+.cache/
+.config/
+.local/
+.python-history
+.subversion/
