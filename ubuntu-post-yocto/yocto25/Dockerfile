@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y locales make python gcc patch diffstat gawk cpio g++ perl && apt-get clean
+    DEBIAN_FRONTEND=noninteractive apt-get install -y locales make python gcc patch diffstat gawk cpio g++ perl git && apt-get clean
 ######## LOCALE STUFF ######################
 RUN locale-gen en_US.UTF-8
 COPY ./default_locale /etc/default/locale
