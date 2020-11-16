@@ -7,5 +7,7 @@ cp -av ../yocto/poky_sumo/build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-mini
 
 docker build . -f yocto25/Dockerfile -t murilopontes/ubuntu1804_yocto_25
 docker build . -f yocto31/Dockerfile -t murilopontes/ubuntu1804_yocto_31
+docker build . -f intel/Dockerfile -t murilopontes/ubuntu1804_intel
+
 
 
