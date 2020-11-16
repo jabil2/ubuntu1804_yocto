@@ -7,8 +7,7 @@ usermod -aG sudo yocto
 echo "yocto  ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 ln -vfs /bin/bash /bin/sh
+#su yocto $@
+
 su yocto ./sdk-dunfell.sh
 su yocto ./sdk-sumo.sh
-
-
-
