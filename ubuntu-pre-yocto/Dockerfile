@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 COPY ./install.sh /
-RUN bash /install.sh
+RUN bash /install.sh && apt-get clean
 
 ######## LOCALE STUFF ######################
 RUN locale-gen en_US.UTF-8
