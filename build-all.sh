@@ -5,7 +5,8 @@ cd $ROOT/ubuntu-pre-yocto &&
 cd $ROOT/yocto &&
 ./build-sdk-external.sh &&
 cd $ROOT/ubuntu-post-yocto &&
-./build.sh &&
-./push.sh
+./build.sh 
+
+#./push.sh
 
 
